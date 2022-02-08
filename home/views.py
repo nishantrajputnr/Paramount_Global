@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def checking(request):
-    return HttpResponse("CHECKING")
+    return render(request,"index.html")
