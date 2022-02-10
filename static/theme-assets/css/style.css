@@ -1,0 +1,22 @@
+.cont{
+    display: flex;
+    align-items: center;
+}
+
+.pk{
+    color: palevioletred;
+}
+
+.bkpk{
+    background-color: palevioletred;
+    width: 4px;
+    height: 35px;
+}
+
+.minuspadding{
+    margin-top: -150px !important;
+}
+
+.hndrd{
+    height: max-content;
+}
