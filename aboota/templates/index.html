@@ -70,7 +70,7 @@
 
             <!-- Change the preloader logo here -->
             <defs>
-                <pattern id="loaderImage" height="216px" width="216px" patternContentUnits="objectBoundingBox">
+                <pattern id="loaderImage" height="100%" width="100%" patternContentUnits="objectBoundingBox">
                     <image href="{% static 'img/logo1.png' %}" preserveAspectRatio="none"
                         width="1" height="1"></image>
                 </pattern>
@@ -188,7 +188,7 @@
                                             <h1 class="best-template animated" style="color: black;margin-bottom:10px" data-animation="fadeInUpShorter"
                                                 data-animation-delay="1.5s">Choose a Partner, not the Broker</h1>
                                              <h3 class="best-template animated" style="color: black;margin-top:10px;" data-animation="fadeInUpShorter"
-                                             data-animation-delay="1.5s">Trade with trend</h3>   
+                                             data-animation-delay="1.5s">Trade with trend...</h3>   
                                             <p class="d-block white animated" style="color: black;" data-animation="fadeInUpShorter"
                                                 data-animation-delay="1.6s">Dive deep into the Ocean of opportunities
                                                 <br>with Paramount Global Limited.<br class="d-none d-xl-block"></p>
@@ -595,12 +595,11 @@
                         <div class="heading text-center">
                             <div class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
                                 <h6 class="sub-title">PGL</h6>
-                                <h2 class="title">Why Paramount Global LIMITED</h2>
+                                <h2 class="title">Why PGL</h2>
                             </div>
 
-                            <p class="animated big" data-animation="fadeInUpShorter" data-animation-delay="0.4s"> Now
-                                enjoy the perks of trading in Forex, cryptocurrencies, Commodities,
-                                <br class="d-none d-xl-block">Shares, Indices, ETFs and more.
+                            <p class="animated big" data-animation="fadeInUpShorter" data-animation-delay="0.4s"> Global paramount Ltd. is a generated from the years of experience and commitment to deliver unmatched services.
+                                <br class="d-none d-xl-block">Now enjoy the perks of trading in Forex, Cryptocurrencies, Commodities, Shares, Indices, ETFs and more.
                             </p>
                         </div>
 
@@ -613,7 +612,7 @@
                                             <div class="d-flex team-member">
                                                 <div class="team-img float-left mr-3" data-toggle="modal"
                                                     data-target="#teamUser9">
-                                                    <img src="{% static 'img/cashindices.jpg' %}"
+                                                    <img src="{% static 'img/forex trading.png' %}"
                                                         alt="team-profile-1" class="rounded-circle" width="128">
                                                 </div>
                                                 <div class="profile align-self-center">
@@ -636,7 +635,7 @@
                                             <div class="d-flex team-member">
                                                 <div class="team-img float-left mr-3" data-toggle="modal"
                                                     data-target="#teamUser6">
-                                                    <img src="{% static 'img/cashindices.jpg' %}"
+                                                    <img src="{% static 'img/future indicies.png' %}"
                                                         alt="team-profile-1" class="rounded-circle" width="128">
                                                 </div>
                                                 <div class="profile align-self-center">
@@ -659,7 +658,7 @@
                                             <div class="d-flex team-member">
                                                 <div class="team-img float-left mr-3" data-toggle="modal"
                                                     data-target="#teamUser2">
-                                                    <img src="{% static 'img/cashindices.jpg' %}"
+                                                    <img src="{% static 'img/trade enerdy.png' %}"
                                                         alt="team-profile-1" class="rounded-circle" width="128">
                                                 </div>
                                                 <div class="profile align-self-center">
@@ -748,29 +747,28 @@
                 </section>
                 <!--/ About -->
                 <!-- Problems & Solutions -->
-                <section id="problem-solution" class="problem-solution section-pro section-padding ">
+                <section id="problem-solution" class="problem-solution section-pro section-padding " style="background: white;">
                     <div class="container">
                         <div class="heading text-center">
                             <div class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                                <h6 class="sub-title">MARKET</h6>
-                                <h2 class="title">A <strong>Trusted Partner</strong> in the Global Financial Market</h2>
+                                <h6 class="sub-title" style="color: gray;">MARKET</h6>
+                                <h2 class="title" style="color: black;">A <strong>Trusted Partner</strong> in the Global Financial Market</h2>
                             </div>
                             <p class="content-desc animated" data-animation="fadeInUpShorter"
-                                data-animation-delay="0.4s">For everyone everywhere around the globe</p>
+                                data-animation-delay="0.4s" style="color: #C7B8FF;">For everyone everywhere around the globe</p>
                         </div>
                         <div class="problems">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
-                                            data-animation-delay="0.2s">Refined in 15 years</h4>
+                                            data-animation-delay="0.2s"style="color: black;">Years of Refining</h4>
                                     </div>
                                     <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s">
-                                        Global Paramount is a script generated from the last 15 years of experience and
-                                        our commitment to unmatched services.</p>
+                                        Global paramount Ltd. is a script generated from the years of experience and commitment to deliver unmatched services.</p>
                                 </div>
-                                <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'theme-assets/images/problems-graphic.png' %}"
+                                <div class="col-md-12 col-lg-6 text-center floating">
+                                    <img src="{% static 'img/open account.png' %}"
                                         class="problems-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
@@ -778,15 +776,15 @@
                         </div>
                         <div class="solutions mt-5">
                             <div class="row">
-                                <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'theme-assets/images/solutions-graphic.png' %}"
-                                        class="solutions-img animated" data-animation="fadeInUpShorter"
+                                <div class="col-md-12 col-lg-6 text-center floating">
+                                    <img src="{% static 'img/deposit ammount.png' %}"
+                                        class="problems-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
                                 <div class="col-md-12 col-lg-6 move-first">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
-                                            data-animation-delay="0.2s">Hitting the Bull's Eye</h4>
+                                            data-animation-delay="0.2s"style="color: black;">Hitting the Bull's Eye</h4>
                                     </div>
                                     <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s">Our
                                         clients are in the market to create wealth, not to ramble. And we are serious
@@ -799,14 +797,14 @@
                                 <div class="col-md-12 col-lg-6">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
-                                            data-animation-delay="0.2s">Valuing Professionalism</h4>
+                                            data-animation-delay="0.2s"style="color: black;">Valuing Professionalism</h4>
                                     </div>
                                     <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s">At
                                         Global Paramount, we believe in delivering only the best. be it our support
                                         &amp; services, expertise, or opportunities. Truly professional.</p>
                                 </div>
-                                <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'theme-assets/images/problems-graphic.png' %}"
+                                <div class="col-md-12 col-lg-6 text-center floating">
+                                    <img src="{% static 'img/start trading.png' %}"
                                         class="problems-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
@@ -878,7 +876,7 @@
                         <div class="solutions mt-5 w-56 m-auto">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'theme-assets/images/solutions-graphic.png' %}"
+                                    <img src="{% static 'img/android trading.png' %}"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
@@ -896,7 +894,7 @@
                         <div class="solutions mt-5 w-56 m-auto">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'theme-assets/images/solutions-graphic.png' %}"
+                                    <img src="{% static 'img/ios trading 3.png' %}"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
@@ -913,15 +911,15 @@
                         </div>
                     </section>
                     <br>
-                    <section class="d-flex">
+                    <section class="d-flex" style="justify-content: space-between;">
                         <div class="solutions mt-5 w-56 m-auto">
-                            <div class="row">
+                            <div class="row" style="justify-content: space-between;">
                                 <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'theme-assets/images/solutions-graphic.png' %}"
+                                    <img src="{% static 'img/ios trading.png' %}"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
-                                <div class="col-md-12 col-lg-6 move-first">
+                                <div class="col-md-12 col-lg-5 move-first">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
                                             data-animation-delay="0.2s">Delivering the best platform</h4>
@@ -933,13 +931,14 @@
                             </div>
                         </div>
                         <div class="solutions mt-5 w-56 m-auto">
-                            <div class="row">
+                            <div class="row" style="justify-content: space-between;">
                                 <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'theme-assets/images/solutions-graphic.png' %}"
+                                    <img src="{% static 'img/web trader.png' %}"
+                                    style="margin-right: 20px;"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
-                                <div class="col-md-12 col-lg-6 move-first">
+                                <div class="col-md-12 col-lg-5 move-first">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
                                             data-animation-delay="0.2s">Unique trading Experience</h4>
@@ -1036,8 +1035,7 @@
                         </div>
                         <div class="team-profile mt-5">
                             <div class="row mb-5">
-                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" data-animation="jello"
-                                    data-animation-delay="0.8s">
+                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" >
                                     <div class="d-flex team-member">
                                         <div class="team-img float-left mr-3">
                                             <div class="rounded-circle" width="128" style="font-size:72px">
@@ -1049,8 +1047,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" data-animation="jello"
-                                    data-animation-delay="0.8s">
+                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" >
                                     <div class="d-flex team-member">
                                         <div class="team-img float-left mr-3">
                                             <a class="rounded-circle" width="128"
@@ -1062,8 +1059,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" data-animation="jello"
-                                    data-animation-delay="0.8s">
+                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" >
                                     <div class="d-flex team-member">
                                         <div class="team-img float-left mr-3">
                                             <a class="rounded-circle" width="128"
