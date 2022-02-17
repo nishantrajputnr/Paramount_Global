@@ -61,8 +61,7 @@
             <!-- Change the preloader logo here -->
             <defs>
                 <pattern id="loaderImage" height="100%" width="100%" patternContentUnits="objectBoundingBox">
-                    <image href="{%static 'theme-assets/images/loader-logo.png'%}" preserveAspectRatio="none" width="1"
-                        height="1"></image>
+                   
                 </pattern>
             </defs>
         </svg>
@@ -2549,43 +2548,9 @@
     <!-- //////////////////////////////////// FOOTER ////////////////////////////////////-->
 
 
-    <footer class="footer static-bottom footer-dark footer-custom-class" data-midnight="white">
-        <div class="container">
-            <div class="footer-wrapper mx-auto text-center">
-                <div class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="0.2s">
-                    Stay updated with us</div>
-                <form action="#" method="post" class="subscribe mb-3 animated" data-animation="fadeInUpShorter"
-                    data-animation-delay="0.3s" accept-charset="utf-8">
-                    <input type="text" name="subscribe" class="subscribe-text" placeholder="Enter your email address">
-                    <button type="submit" class="btn btn-gradient-orange btn-glow rounded-circle subscribe-btn"><i
-                            class="ti-angle-right"></i></button>
-                </form>
-                <p class="subscribe-desc mb-4 animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s">
-                    Subscribe now and be the first to find about our latest products!</p>
-                <ul class="social-buttons list-unstyled mb-5">
-                    <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s"><a href="#"
-                            title="Facebook" class="btn btn-outline-facebook rounded-circle"><i
-                                class="ti-facebook"></i></a></li>
-                    <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.6s"><a href="#"
-                            title="Twitter" class="btn btn-outline-twitter rounded-circle"><i
-                                class="ti-twitter-alt"></i></a></li>
-                    <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><a href="#"
-                            title="LinkedIn" class="btn btn-outline-linkedin rounded-circle"><i
-                                class="ti-linkedin"></i></a></li>
-                    <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a href="#"
-                            title="GitHub" class="btn btn-outline-github rounded-circle"><i class="ti-github"></i></a>
-                    </li>
-                    <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.9s"><a href="#"
-                            title="Pintrest" class="btn btn-outline-pinterest rounded-circle"><i
-                                class="ti-pinterest"></i></a></li>
-                </ul>
-                <span class="copyright animated" data-animation="fadeInUpShorter" data-animation-delay="1.0s">Copyright
-                    &copy; 2019, Crypto ICO. Template Designed by<a href="http://pixinvent.com" title="pixinvent">
-                        Pixinvent</a></span>
-            </div>
-        </div>
-    </footer>
+ 
 
+    {% include 'footer.html' %}
 
 
     <!-- BEGIN VENDOR JS-->
