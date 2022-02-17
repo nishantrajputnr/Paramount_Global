@@ -71,7 +71,7 @@
             <!-- Change the preloader logo here -->
             <defs>
                 <pattern id="loaderImage" height="100%" width="100%" patternContentUnits="objectBoundingBox">
-                    <image href="{% static 'img/logo1.png' %}"  preserveAspectRatio="none"
+                    <image href="{% static 'img/logo2.png' %}"  preserveAspectRatio="none"
                         width="1" height="1"></image>
                 </pattern>
             </defs>
@@ -185,10 +185,14 @@
                                 <div class="row align-items-center">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="banner-content pt-5">
-                                            <h1 class="best-template animated" style="color: black;margin-bottom:10px" data-animation="fadeInUpShorter"
-                                                data-animation-delay="1.5s">Choose a Partner <br>not the Broker</h1>
+                                            {% comment %} <h1 class="best-template animated" style="color: black;margin-bottom:10px" data-animation="fadeInUpShorter"
+                                                data-animation-delay="1.5s">Choose a Partner not the Broker</h1>
                                              <h3 class="best-template animated" style="color: black;margin-top:10px;" data-animation="fadeInUpShorter"
-                                             data-animation-delay="1.5s">Trade with trend...</h3>   
+                                             data-animation-delay="1.5s">Trade with trend...</h3>    {% endcomment %}
+                                             <h1 class="best-template animated" style="color: black;margin-bottom:10px" data-animation="fadeInUpShorter"
+                                             data-animation-delay="1.5s">Looking for Financial Freedom?</h1>
+                                          <h3 class="best-template animated" style="color: black;margin-top:10px;" data-animation="fadeInUpShorter"
+                                          data-animation-delay="1.5s">Here we are…</h3>   
                                             <p class="d-block white animated" style="color: black;" data-animation="fadeInUpShorter"
                                                 data-animation-delay="1.6s">Dive deep into the Ocean of opportunities
                                                 <br>with Paramount Global Limited.<br class="d-none d-xl-block"></p>
@@ -405,7 +409,7 @@
                                                     <g transform="matrix(1,0,0,1,310,410)" opacity="1">
                                                         <image class="animated cic-logo"
                                                             data-animation="fadeInUpShortest"
-                                                            data-animation-delay="2.4s" width="100px" height="100px"
+                                                            data-animation-delay="2.4s" width="130px" 
                                                             preserveAspectRatio="xMidYMid slice"
                                                             xlink:href="{% static 'img/logo2.png' %}">
                                                         </image>
@@ -555,7 +559,7 @@
                                                         <image class="animated" data-animation="fadeInLeftShorter"
                                                             data-animation-delay="2s" width="120px" height="26px"
                                                             preserveAspectRatio="xMidYMid slice"
-                                                            xlink:href="{% static 'theme-assets/images/svg/svg-animation/physical.svg' %}">
+                                                            xlink:href="{% static 'img/physicall.svg' %}">
                                                         </image>
                                                     </g>
                                                     <!-- step-2-text -->
@@ -563,15 +567,15 @@
                                                         <image class="animated" data-animation="fadeInLeftShorter"
                                                             data-animation-delay="1.6s" width="180px" height="24px"
                                                             preserveAspectRatio="xMidYMid slice"
-                                                            xlink:href="{% static 'theme-assets/images/svg/svg-animation/cic-blockchain.svg' %}">
+                                                            xlink:href="{% static 'img/para.svg' %}">
                                                         </image>
                                                     </g>
                                                     <!-- step-3-text -->
                                                     <g transform="matrix(1,0,0,1,432,745)" opacity="0.8">
                                                         <image class="animated" data-animation="fadeInLeftShorter"
-                                                            data-animation-delay="1.2s" width="80px" height="24px"
+                                                            data-animation-delay="1.2s" width="180px" height="24px"
                                                             preserveAspectRatio="xMidYMid slice"
-                                                            xlink:href="{% static 'theme-assets/images/svg/svg-animation/digital.svg' %}">
+                                                            xlink:href="{% static 'img/financial assets.svg' %}">
                                                         </image>
                                                     </g>
                                                 </g>
