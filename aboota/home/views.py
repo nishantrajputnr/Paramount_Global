@@ -9,3 +9,5 @@ def product(request):
     return render(request,"products.html")    
 def education(request):
     return render(request,"education.html") 
+def trading(request):
+    return render(request,"trading.html")     

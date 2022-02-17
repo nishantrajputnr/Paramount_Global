@@ -86,11 +86,11 @@
         <!-- Horizontal Menu Start-->
         <nav class="main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1">
             <div class="container">
-                {% comment %} <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
-                    href="/"><img src="{% static 'img/logo.png' %}" style="height:100px" alt="Crypto Logo" /><span
+                 <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
+                    href="/"><img src="{% static 'img/logo2.png' %}" style="height:50px" alt="Crypto Logo" /><span
                         class="brand-text">
                         <span class="font-weight-bold">PARAMOUNT</span> GLOBAL</span>
-                    </a> {% endcomment %}
+                    </a> 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -98,12 +98,18 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div id="navigation" class="navbar-nav ml-auto">
                         <ul class="navbar-nav mt-1">
-                            {% comment %} <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
                                 <a class="nav-link" href={% url 'about' %}>About Us</a>
                             </li>
                             <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
                                 <a class="nav-link" href={% url 'product' %}>Products</a>
-                            </li> {% endcomment %}
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'trading' %}>Trading</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'education' %}>Education</a>
+                            </li>
                             {% comment %} <li class="nav-item animated" data-animation="fadeInDown"
                                 data-animation-delay="1.2s">
                                 <a class="nav-link" href="index.html#problem-solution">Solutions</a>
@@ -591,13 +597,13 @@ the growth.
                     <div class="container">
                         <div class="heading text-center">
                             <div>
-                                <h6 class="sub-title">Solutions</h6>
+                                <h6 class="sub-title">Vision &amp; <strong>Mission</strong></h6>
                                 <h2 class="title">Vision &amp; <strong>Mission</strong></h2>
                             </div>
-                            <p class="content-desc">More than $40 million in assets were placed under restraint pending
+                            {% comment %} <p class="content-desc">More than $40 million in assets were placed under restraint pending
                                 forfeiture, and more than 30
                                 <br class="d-none d-xl-block">Liberty Reserve exchanger domain names were seized.
-                            </p>
+                            </p> {% endcomment %}
                         </div>
                         <div class="problems">
                             <div class="row align-items-center">
@@ -645,7 +651,7 @@ the growth.
                 <!-- Whitepaper -->
                 <section id="whitepaper" class="whitepaper section-padding">
                     <div class="container">
-                        <div class="heading text-center">
+                        {% comment %} <div class="heading text-center">
                             <h6 class="sub-title">Paramount Global</h6>
                             <h2 class="title">Our Story</h2>
                             <p class="content-desc">Terms of service are rules by which one must agree to abide in order
@@ -653,7 +659,7 @@ the growth.
                                 <br class="d-none d-xl-block">Terms of service can also be merely a disclaimer,
                                 especially regarding the use of websites.
                             </p>
-                        </div>
+                        </div> {% endcomment %}
                         <div class="row">
                             <div class="col-lg-5 col-md-12" style="align-items: center; display: flex;">
                                 <div class="whitepaper-img">
