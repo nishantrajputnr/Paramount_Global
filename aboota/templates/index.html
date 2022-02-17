@@ -36,7 +36,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
     <!-- END Custom CSS-->
     <style>.floating { 
-        height: 50vh !important;
         animation: up-down 2s ease-in-out infinite alternate-reverse both;
     }
      
@@ -70,8 +69,8 @@
 
             <!-- Change the preloader logo here -->
             <defs>
-                <pattern id="loaderImage" height="100%" width="100%" patternContentUnits="objectBoundingBox">
-                    <image href="{% static 'img/logo2.png' %}"  preserveAspectRatio="none"
+                <pattern id="loaderImage" height="20" width="20" patternContentUnits="objectBoundingBox">
+                    <image href="{% static 'img/Square logo.svg' %}"  preserveAspectRatio="none"
                         width="1" height="1"></image>
                 </pattern>
             </defs>
@@ -300,9 +299,9 @@
                                                     <g transform="matrix(1,0,0,1,230,550)" opacity="1">
                                                         <image class="animated svg-elements-1"
                                                             data-animation="fadeInUpShorter" data-animation-delay="1.6s"
-                                                            width="60px" height="60px"
+                                                            width="70px" height="70px"
                                                             preserveAspectRatio="xMidYMid slice"
-                                                            xlink:href="{% static 'theme-assets/images/svg/svg-animation/eth.svg' %}">
+                                                            xlink:href="{% static 'img/Forex Symbols.svg' %}">
                                                         </image>
                                                     </g>
 
@@ -717,8 +716,8 @@
                                 data-animation-delay="0.4s" style="color: gray;">For everyone everywhere around the globe</p>
                         </div>
                         <div class="problems">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-6 floating">
+                            <div class="row" >
+                                <div class="col-md-12 col-lg-6 floating" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
                                             data-animation-delay="0.2s"style="color: black;">Years of Refining</h4>
@@ -740,7 +739,7 @@
                                         class="problems-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic">
                                 </div>
-                                <div class="col-md-12 col-lg-6 move-first floating">
+                                <div class="col-md-12 col-lg-6 move-first floating"style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
                                             data-animation-delay="0.2s"style="color: black;">Hitting the Bull's Eye</h4>
@@ -753,7 +752,7 @@
                         </div>
                         <div class="problems">
                             <div class="row">
-                                <div class="col-md-12 col-lg-6 floating">
+                                <div class="col-md-12 col-lg-6 floating"style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
                                             data-animation-delay="0.2s"style="color: black;">Valuing Professionalism</h4>
@@ -1921,7 +1920,6 @@
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME JS-->
     <script src="{% static 'theme-assets/js/theme.js' %}"></script>
-    <!-- <script src="{% static 'theme-assets/js/sales-notification.js' %}"></script> -->
     <!-- END CRYPTO JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <script src="{% static 'theme-assets/js/scripts/particles-type1.js' %}"></script>
