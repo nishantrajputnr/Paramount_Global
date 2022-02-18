@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+{% load static %}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description"
+        content="Crypto ICO is a responsive modern &amp; clean cryptocurrency website landing page html with admin dashboard template , specially created for ICO Startup agencies and digital crypto currency investment website.">
+    <meta name="keywords"
+        content="crypto, ico, cryptocurrency, bitcoin, landing, admin, dashboard, template, modern, clean, responsive">
+    <meta name="author" content="PIXINVENT">
+    <title>Paramount Global Ltd.</title>
+    <link rel="apple-touch-icon" href="{% static 'theme-assets/images/ico/apple-icon-120.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/asset 2.png' %}">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
+    <!--Font icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-digimedia-v3.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/themify/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/animate/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/flipclock/flipclock.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/swiper/css/swiper.min.css' %}">
+    <!-- END VENDOR CSS-->
+    <!-- END CRYPTO CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/template-3d-animation.css' %}">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <!-- END Custom CSS-->
+    <style>.floating { 
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    }
+     
+    @keyframes up-down {
+        0% { transform: translateY(10px); }
+        100%   { transform: translateY(-10px); }   
+    }</style>
+</head>
+
+<body class=" 1-column undefined  page-animated svg-wrapper" data-menu-open="hover" data-menu="">
+    <!-- Preloader | Comment below code if you don't want preloader-->
+   
+   
+    <header class="page-header">
+        <!-- Horizontal Menu Start-->
+        <nav class="main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1">
+            <div class="container">
+                 <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
+                    href="/"><img src="{% static 'img/logo2.png' %}" style="height:50px" alt="Crypto Logo" /><span
+                        class="brand-text">
+                        <span class="font-weight-bold">PARAMOUNT</span> GLOBAL</span>
+                    </a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div id="navigation" class="navbar-nav ml-auto">
+                        <ul class="navbar-nav mt-1">
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'about' %}>About Us</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'product' %}>Products</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'trading' %}>Trading</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'education' %}>Education</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'referal' %}>Referal</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'contact' %}>Contact</a>
+                            </li>
+                      
+                        </ul>
+                        <span id="slide-line"></span>
+                        <form class="form-inline mt-2 mt-md-0">
+                            <a class="btn btn-sm btn-gradient-purple btn-glow my-2 my-sm-0 animated"
+                                data-animation="fadeInDown" data-animation-delay="1.8s"
+                                href="https://pixinvent.com/demo/crypto-ico-admin/html/ltr/vertical-menu/account-login.html"
+                                target="_blank">Sign in</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <section id="contact" class="contact section-padding">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="heading text-center">
+                        <h6 class="sub-title animated" data-animation="fadeInUpShorter"
+                            data-animation-delay="0.2s">Contact</h6>
+                        <h2 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
+                            Contact<strong> Crypto ICO</strong></h2>
+                        <div class="separator animated" data-animation="fadeInUpShorter"
+                            data-animation-delay="0.3s">
+                            <span class="large"></span>
+                            <span class="medium"></span>
+                            <span class="small"></span>
+                        </div>
+                        <p class="content-desc animated" data-animation="fadeInUpShorter"
+                            data-animation-delay="0.4s">Have questions? We’re happy to help.</p>
+
+                        <p class="font-medium mt-5 animated" data-animation="fadeInUpShorter"
+                            data-animation-delay="0.5s">Contact us with any questions regarding Crypto ICO.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 mx-auto">
+                            <ul class="list-unstyled list-group contact-info mb-3">
+                                <li class="pt-1 animated" data-animation="fadeInUpShorter"
+                                    data-animation-delay="0.6s">
+                                    <i class="ti-location-pin"></i>
+                                    <span>Registered add: Suit 305,Griffith corporate center, kingstown, st. vincent and the Grenadines</span>
+                                </li>
+                                <li class="animated" data-animation="fadeInUpShorter"
+                                    data-animation-delay="0.7s">
+                                    <i class="ti-email"></i>
+                                    <span>info@pglfx.com</span>
+                                </li>
+                              
+                                <li class="animated" data-animation="fadeInUpShorter"
+                                    data-animation-delay="0.9s">
+                                    <i class="ti-headphone"></i>
+                                    <span>Phone no: +916230730714</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-7 col-md-12 mx-auto">
+                            <form action="#" method="post" accept-charset="utf-8" class="text-center">
+                                <input type="text" class="form-control animated"
+                                    data-animation="fadeInUpShorter" data-animation-delay="0.8s" name="name"
+                                    placeholder="Your Name">
+                                <input type="text" class="form-control animated"
+                                    data-animation="fadeInUpShorter" data-animation-delay="0.9s" name="mail"
+                                    placeholder="Your Mail">
+                                <textarea rows="4" class="form-control animated"
+                                    data-animation="fadeInUpShorter" data-animation-delay="1.0s" name="message"
+                                    placeholder="Your Massage"></textarea>
+                                <button type="submit"
+                                    class="btn btn-lg btn-gradient-blue btn-glow float-right animated"
+                                    data-animation="fadeInUpShorter" data-animation-delay="1.1s">Send
+                                    Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    
+</body>
+</html>
