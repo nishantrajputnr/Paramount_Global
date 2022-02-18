@@ -2,38 +2,55 @@
 <html lang="en" data-textdirection="ltr">
 {% load static %}
 
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Crypto ICO is a responsive modern &amp; clean cryptocurrency website landing page html with admin dashboard template , specially created for ICO Startup agencies and digital crypto currency investment website.">
-    <meta name="keywords" content="crypto, ico, cryptocurrency, bitcoin, landing, admin, dashboard, template, modern, clean, responsive">
+    <meta name="description"
+        content="Crypto ICO is a responsive modern &amp; clean cryptocurrency website landing page html with admin dashboard template , specially created for ICO Startup agencies and digital crypto currency investment website.">
+    <meta name="keywords"
+        content="crypto, ico, cryptocurrency, bitcoin, landing, admin, dashboard, template, modern, clean, responsive">
     <meta name="author" content="PIXINVENT">
-    <title>Crypto ICO - Cryptocurrency Website Landing Page HTML Template</title>
-    <link rel="apple-touch-icon" href="{% static 'assets/images/ico/apple-icon-120.png'%}">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'theme-assets/images/ico/favicon.ico'%}">
+    <title>Paramount Global Ltd.</title>
+    <link rel="apple-touch-icon" href="{% static 'theme-assets/images/ico/apple-icon-120.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'theme-assets/images/ico/favicon.ico' %}">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
     <!--Font icons-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/bootstrap.min.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/themify/style.min.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/flag-icon-css/css/flag-icon.min.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/animate/animate.min.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/flipclock/flipclock.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/swiper/css/swiper.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-digimedia-v3.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/themify/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/animate/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/flipclock/flipclock.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/swiper/css/swiper.min.css' %}">
     <!-- END VENDOR CSS-->
     <!-- END CRYPTO CSS-->
     <!-- BEGIN Page Level CSS-->
-    {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/template-intro-video.css'%}"> {% endcomment %}
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/template-3d-animation.css' %}">
     
-    <link rel="stylesheet" type="text/css" href="{%static 'theme-assets/css/template-3d-animation.css'%}">
+    <script src="https://kit.fontawesome.com/1d21464267.js" crossorigin="anonymous"></script>
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="{%static 'theme-assets/css/template-counter.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'theme-assets/css/template-3d-graphics.css'%}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/template-intro-video.css'%}">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{%static 'assets/css/style.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
     <!-- END Custom CSS-->
-  </head>
+    <style>.floating { 
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    }
+     
+    @keyframes up-down {
+        0% { transform: translateY(10px); }
+        100%   { transform: translateY(-10px); }   
+    }</style>
+</head>
   <body class=" 1-column   page-animated template-intro-video-default template-intro-video" data-menu-open="hover" data-menu="">
     <!-- Preloader | Comment below code if you don't want preloader-->
 <div id="loader-wrapper">
@@ -79,9 +96,11 @@
         <!-- Horizontal Menu Start-->
         <nav class="main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1">
             <div class="container">
-                <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
-                    href="#head-area"><img src="{% static 'theme-assets/images/logo.png' %}" alt="Crypto Logo" /><span
-                        class="brand-text"><span class="font-weight-bold">PARAMOUNT</span> GLOBAL</span></a>
+                 <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
+                    href="/"><img src="{% static 'img/logo2.png' %}" style="height:50px" alt="Crypto Logo" /><span
+                        class="brand-text">
+                        <span class="font-weight-bold">PARAMOUNT</span> GLOBAL</span>
+                    </a> 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -95,7 +114,12 @@
                             <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
                                 <a class="nav-link" href={% url 'product' %}>Products</a>
                             </li>
-                        
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'trading' %}>Trading</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'education' %}>Education</a>
+                            </li>
                            
                         </ul>
                         <span id="slide-line"></span>
@@ -131,5 +155,7 @@
     <!-- END CRYPTO JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <script src="{% static 'theme-assets/js/scripts/particles-type1.js' %}"></script>
+   
+    <script src="https://kit.fontawesome.com/1d21464267.js" crossorigin="anonymous"></script>
     
 </html>
