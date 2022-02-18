@@ -11,3 +11,5 @@ def education(request):
     return render(request,"education.html") 
 def trading(request):
     return render(request,"trading.html")     
+def terminal(request):
+    return render(request,"terminal.html")     
