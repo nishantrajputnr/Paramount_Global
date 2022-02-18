@@ -1,13 +1,28 @@
-.navbar-toggler-icon{
-	background-color: #BE68E5 !important;
-	border-color: #BE68E5 !important;
+
+
+@media (max-width:650px){
+	.first-step{
+		flex-direction:column ;
+	}
 }
 
-@media (max-width:450px){
-	.font-weight-bold{
-		display: none;
+@media (max-width:400px){
+	.why{
+		margin-left: 0 ;
 	}
+
 }
 .brand-text{
 	font-size: 0.7rem;
+}
+.first-step{
+	display: flex;
+}
+.why{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
 }
