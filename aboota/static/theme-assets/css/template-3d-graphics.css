@@ -2559,6 +2559,8 @@ header .navbar.navbar-shadow {
   .main-menu.navbar .navbar-toggler {
     margin-right : 1rem;
     border-color : rgba(255, 255, 255, 0.7);
+    background-color: purple !important;
+  
   }
   .main-menu.navbar div.navbar-nav {
     padding : 1rem 1.5rem;
