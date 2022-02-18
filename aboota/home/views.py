@@ -15,3 +15,5 @@ def terminal(request):
     return render(request,"terminal.html")     
 def referal(request):
     return render(request,"referal.html")     
+def contact(request):
+    return render(request,"contact.html")     
