@@ -13,3 +13,5 @@ def trading(request):
     return render(request,"trading.html")     
 def terminal(request):
     return render(request,"terminal.html")     
+def referal(request):
+    return render(request,"referal.html")     
