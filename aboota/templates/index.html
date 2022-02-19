@@ -93,6 +93,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
+
                     <div id="navigation" class="navbar-nav ml-auto" >
                         <ul class="navbar-nav mt-1" >
                             <li class="nav-item animated " data-animation="fadeInDown" data-animation-delay="1.1s" te>
@@ -124,10 +125,17 @@
                                 <a class="nav-link new-nav" href={% url 'referal' %} style="color: black !important ; 
                                 background-color: #fff !important ; 
                                 border-radius: 5px !important;margin:0 5px">Referal</a>
+
                             </li>
+<<<<<<< HEAD
                             {% comment %}<li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
                                 <a class="nav-link" href={% url 'contact' %}>Contact</a>
                             </li>{% endcomment %}
+=======
+                            {% comment %} <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'contact' %} style="color: black;">Contact</a>
+                            </li> {% endcomment %}
+>>>>>>> c992e93557147549a8283c8570e786e72bceaf0e
                       
                         </ul>
                         <span id="slide-line"></span>
@@ -150,7 +158,7 @@
         <div class="content-body">
             <main>
                 <!-- Header: 3D Animation -->
-                <section class="head-area" id="head-area" >
+                <section class="head-area" id="head-area" style="background: white;">
                     <div id="particles-js"></div>
                     <div class="head-content d-flex align-items-center" style="background:white;" >
                         <div class="container">
@@ -163,10 +171,12 @@
                                              <h3 class="best-template animated" style="color: black;margin-top:10px;" data-animation="fadeInUpShorter"
                                              data-animation-delay="1.5s">Trade with trend...</h3>    {% endcomment %}
                                              <h1 class="best-template animated" style="margin-bottom:10px" data-animation="fadeInUpShorter"
-                                             data-animation-delay="1.5s">Looking for Financial Freedom?</h1>
+                                             data-animation-delay="1.5s"style="color: black !important;">Looking for Financial Freedom?</h1>
                                           <h3 class="best-template animated" style="margin-top:10px;" data-animation="fadeInUpShorter"
                                           data-animation-delay="1.5s">Here we are…</h3>   
+
                                             <p class="d-block animated"  data-animation="fadeInUpShorter"
+
                                                 data-animation-delay="1.6s">Dive deep into the Ocean of opportunities
                                                 <br>with Paramount Global Limited.<br class="d-none d-xl-block"></p>
                                             <div class="mt-5">
@@ -583,7 +593,7 @@
                         </div>
 
                         <section id="team" class="team minuspadding">
-                            <div class="container ml-5">
+                            <div class="container why">
                                 <div class="team-profile mt-5">
                                     <div class="row m-5">
                                         <div class="col-sm-12 col-md-6 col-md-3 mb-5 animated" 
@@ -806,15 +816,15 @@
 
 
                     <!-- Financial Market -->
-                    <section class="d-flex">
+                    <section class="first-step">
                         <div class="solutions mt-5 w-56 m-auto">
                             <div class="row">
-                                <div class="col-md-12 col-lg-6 text-center">
+                                <div class="col-md-12 col-lg-6 col-xs-10  text-center">
                                     <img src="{% static 'img/Keep_it_easy_and_quick.png' %}"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
-                                        data-animation-delay="0.5s" alt="problems-graphic" width="250px" height-"250px">
+                                        data-animation-delay="0.5s" alt="problems-graphic" width="250px" height="250px">
                                 </div>
-                                <div class="col-md-12 col-lg-6 move-first">
+                                <div class="col-md-12 col-lg-6 col-xs-10 move-first">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
                                             data-animation-delay="0.2s">Keeping it Quick and <br>Easy</h4>
@@ -827,12 +837,12 @@
                         </div>
                         <div class="solutions mt-5 w-56 m-auto">
                             <div class="row">
-                                <div class="col-md-12 col-lg-6 text-center">
+                                <div class="col-md-12 col-lg-6 col-xs-10 text-center">
                                     <img src="{% static 'img/Making_it_free_for_you.png' %}"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic"  width="250px" height-"250px">
                                 </div>
-                                <div class="col-md-12 col-lg-6 move-first">
+                                <div class="col-md-12 col-lg-6 col-xs-10 move-first">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
                                             data-animation-delay="0.2s">Making it free for you</h4>
@@ -845,7 +855,7 @@
                         </div>
                     </section>
                     <br>
-                    <section class="d-flex" style="justify-content: space-between;">
+                    <section class="first-step" >
                         <div class="solutions mt-5 w-56 m-auto">
                             <div class="row" style="justify-content: space-between;">
                                 <div class="col-md-12 col-lg-6 text-center">
