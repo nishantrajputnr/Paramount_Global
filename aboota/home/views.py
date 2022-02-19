@@ -17,3 +17,5 @@ def referral(request):
     return render(request,"referral.html")     
 def contact(request):
     return render(request,"contact.html")     
+def account(request):
+    return render(request,"account.html")    
