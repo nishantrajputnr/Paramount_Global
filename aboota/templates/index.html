@@ -35,14 +35,21 @@
     <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
     <!-- END Custom CSS-->
-    <style>.floating { 
-        animation: up-down 2s ease-in-out infinite alternate-reverse both;
-    }
-     
-    @keyframes up-down {
-        0% { transform: translateY(10px); }
-        100%   { transform: translateY(-10px); }   
-    }</style>
+    <style>
+        .floating {
+            animation: up-down 2s ease-in-out infinite alternate-reverse both;
+        }
+
+        @keyframes up-down {
+            0% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
 </head>
 
 <body class=" 1-column undefined  page-animated svg-wrapper" data-menu-open="hover" data-menu="">
@@ -70,7 +77,7 @@
             <!-- Change the preloader logo here -->
             <defs>
                 <pattern id="loaderImage" height="20" width="20" patternContentUnits="objectBoundingBox">
-                   
+
                 </pattern>
             </defs>
         </svg>
@@ -78,28 +85,28 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
-   
+
     <header class="page-header">
         <!-- Horizontal Menu Start-->
         <nav class="main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1">
             <div class="container">
-                 <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
-                    href="/"><img src="{% static 'img/logo2.png' %}" style="height:50px" alt="Crypto Logo" /><span
+                <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s" href="/"><img
+                        src="{% static 'img/logo2.png' %}" style="height:50px" alt="Crypto Logo" /><span
                         class="brand-text" style="color: black;">
                         <span class="font-weight-bold">PARAMOUNT</span> GLOBAL</span>
-                    </a> 
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                    <div id="navigation" class="navbar-nav ml-auto" >
-                        <ul class="navbar-nav mt-1" >
+                    <div id="navigation" class="navbar-nav ml-auto">
+                        <ul class="navbar-nav mt-1">
                             <li class="nav-item animated " data-animation="fadeInDown" data-animation-delay="1.1s" te>
                                 <a class="nav-link new-nav" href="/" style="color: black !important ; 
                                 background-color: #fff !important ; 
-                                border-radius: 5px !important ; margin:0 5px" >Home</a>
+                                border-radius: 5px !important ; margin:0 5px">Home</a>
                             </li>
                             <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
                                 <a class="nav-link new-nav" href={% url 'about' %} style="color: black !important ; 
@@ -128,16 +135,17 @@
 
                             </li>
 
-                            {% comment %} <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                            {% comment %} <li class="nav-item animated" data-animation="fadeInDown"
+                                data-animation-delay="1.1s">
                                 <a class="nav-link" href={% url 'contact' %} style="color: black;">Contact</a>
                             </li> {% endcomment %}
 
-                      
+
                         </ul>
                         <span id="slide-line"></span>
                         <form class="form-inline mt-2 mt-md-0">
                             <a class="btn btn-sm btn-gradient-purple btn-glow my-2 my-sm-0 animated"
-                                data-animation="fadeInDown" data-animation-delay="1.8s" 
+                                data-animation="fadeInDown" data-animation-delay="1.8s"
                                 href="https://pixinvent.com/demo/crypto-ico-admin/html/ltr/vertical-menu/account-login.html"
                                 target="_blank">Sign in</a>
                         </form>
@@ -156,30 +164,33 @@
                 <!-- Header: 3D Animation -->
                 <section class="head-area" id="head-area" style="background: white;">
                     <div id="particles-js"></div>
-                    <div class="head-content d-flex align-items-center" style="background:white;" >
+                    <div class="head-content d-flex align-items-center" style="background:white;">
                         <div class="container">
                             <div class="banner-wrapper">
                                 <div class="row align-items-center">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="banner-content pt-5">
-                                            {% comment %} <h1 class="best-template animated" style="color: black;margin-bottom:10px" data-animation="fadeInUpShorter"
+                                            {% comment %} <h1 class="best-template animated"
+                                                style="color: black;margin-bottom:10px" data-animation="fadeInUpShorter"
                                                 data-animation-delay="1.5s">Choose a Partner not the Broker</h1>
-                                             <h3 class="best-template animated" style="color: black;margin-top:10px;" data-animation="fadeInUpShorter"
-                                             data-animation-delay="1.5s">Trade with trend...</h3>    {% endcomment %}
-                                             <h1 class="best-template animated" style="margin-bottom:10px" data-animation="fadeInUpShorter"
-                                             data-animation-delay="1.5s"style="color: black !important;">Looking for Financial Freedom?</h1>
-                                          <h3 class="best-template animated" style="margin-top:10px;" data-animation="fadeInUpShorter"
-                                          data-animation-delay="1.5s">Here we are…</h3>   
+                                            <h3 class="best-template animated" style="color: black;margin-top:10px;"
+                                                data-animation="fadeInUpShorter" data-animation-delay="1.5s">Trade with
+                                                trend...</h3> {% endcomment %}
+                                            <h1 class="best-template animated" style="margin-bottom:10px"
+                                                data-animation="fadeInUpShorter" data-animation-delay="1.5s"
+                                                style="color: black !important;">Looking for Financial Freedom?</h1>
+                                            <h3 class="best-template animated" style="margin-top:10px;"
+                                                data-animation="fadeInUpShorter" data-animation-delay="1.5s">Here we
+                                                are…</h3>
 
-                                            <p class="d-block animated"  data-animation="fadeInUpShorter"
-
+                                            <p class="d-block animated" data-animation="fadeInUpShorter"
                                                 data-animation-delay="1.6s">Dive deep into the Ocean of opportunities
-                                                <br>with Paramount Global Limited.<br class="d-none d-xl-block"></p>
+                                                <br>with Paramount Global Limited.<br class="d-none d-xl-block">
+                                            </p>
                                             <div class="mt-5">
-                                                <a 
-                                                    class="btn btn-lg btn-gradient-purple btn-glow mr-4 mb-2 animated"
-                                                    data-animation="fadeInUpShorter"
-                                                    data-animation-delay="1.7s">GET STARTED</a>
+                                                <a class="btn btn-lg btn-gradient-purple btn-glow mr-4 mb-2 animated"
+                                                    data-animation="fadeInUpShorter" data-animation-delay="1.7s">GET
+                                                    STARTED</a>
                                                 {% comment %} <a href="#whitepaper"
                                                     class="btn btn-lg btn-gradient-purple btn-glow mb-2 animated"
                                                     data-animation="fadeInUpShorter"
@@ -188,12 +199,12 @@
                                         </div>
                                     </div>
                                     {% comment %} <div class="col-lg-6">
-                                        <a class="navbar-brand animated floating" data-animation="fadeInDown" data-animation-delay="1s"
-                                            href="/"><img src="{% static 'img/logo.png' %}" style="height:400px" alt="Crypto Logo" /><span
-                                                class="brand-text">
-                                              </a>
-                                        </div>     {% endcomment %}
-                                     <div class="col-lg-6 col-md-12 move-first">
+                                        <a class="navbar-brand animated floating" data-animation="fadeInDown"
+                                            data-animation-delay="1s" href="/"><img src="{% static 'img/logo.png' %}"
+                                                style="height:400px" alt="Crypto Logo" /><span class="brand-text">
+                                        </a>
+                                    </div> {% endcomment %}
+                                    <div class="col-lg-6 col-md-12 move-first">
                                         <div id="svg-animation">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 857 807" width="857"
                                                 height="807" preserveAspectRatio="xMidYMid meet"
@@ -278,12 +289,12 @@
                                                     <!-- eth -->
                                                     <g transform="matrix(1,0,0,1,230,550)" opacity="1">
                                                         <image class="animated svg-elements-1"
-                                                        data-animation="fadeInUpShorter" data-animation-delay="1.8s"
-                                                        width="60px" height="60px"
-                                                        preserveAspectRatio="xMidYMid slice"
-                                                        xlink:href="{% static 'img/Gold.svg' %}">
-                                                    </image>
-                                                  
+                                                            data-animation="fadeInUpShorter" data-animation-delay="1.8s"
+                                                            width="60px" height="60px"
+                                                            preserveAspectRatio="xMidYMid slice"
+                                                            xlink:href="{% static 'img/Gold.svg' %}">
+                                                        </image>
+
                                                     </g>
 
                                                     <!-- neo -->
@@ -378,7 +389,8 @@
                                                     </g> {% endcomment %}
 
                                                     <!-- logo-shaodw -->
-                                                    {% comment %} <g transform="matrix(0.1385,0,0,0.1175,275,385)" opacity="0.65">
+                                                    {% comment %} <g transform="matrix(0.1385,0,0,0.1175,275,385)"
+                                                        opacity="0.65">
                                                         <image class="animated" data-animation="fadeInUpShorter"
                                                             data-animation-delay="2.2s" width="1500px" height="1500px"
                                                             preserveAspectRatio="xMidYMid slice"
@@ -387,15 +399,14 @@
                                                     </g> {% endcomment %}
                                                     <!-- logo -->
                                                     <g transform="matrix(1,0,0,1,310,410)" opacity="1">
-                                                       
-                                                            <image class="animated svg-elements-1"
-                                                                data-animation="fadeInUpShorter" data-animation-delay="1.6s"
-                                                                width="130px" 
-                                                                preserveAspectRatio="xMidYMid slice"
-                                                                xlink:href="{% static 'img/logo2.png' %}">
-                                                            </image>
-                                                        </g>
-                                                    
+
+                                                        <image class="animated svg-elements-1"
+                                                            data-animation="fadeInUpShorter" data-animation-delay="1.6s"
+                                                            width="130px" preserveAspectRatio="xMidYMid slice"
+                                                            xlink:href="{% static 'img/logo2.png' %}">
+                                                        </image>
+                                                    </g>
+
 
                                                     <!-- Step 3 -->
                                                     <!-- base-shaodw -->
@@ -568,7 +579,7 @@
                                                 </defs>
                                             </svg>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -584,7 +595,8 @@
                                 <h2 class="title">Why PGL</h2>
                             </div>
 
-                            <p class="animated big" data-animation="fadeInUpShorter" data-animation-delay="0.4s"> A globally recognized broker paving your way to success in Global Financial Market.
+                            <p class="animated big" data-animation="fadeInUpShorter" data-animation-delay="0.4s"> A
+                                globally recognized broker paving your way to success in Global Financial Market.
                             </p>
                         </div>
 
@@ -592,51 +604,50 @@
                             <div class="container why">
                                 <div class="team-profile mt-5">
                                     <div class="row m-5">
-                                        <div class="col-sm-12 col-md-6 col-md-3 mb-5 animated" 
-                                            >
+                                        <div class="col-sm-12 col-md-6 col-md-3 mb-5 animated">
                                             <div class="d-flex team-member">
                                                 <div class="team-img float-left mr-3">
-                                                    <img src="{% static 'img/Quick Icon.svg' %}"
-                                                        alt="team-profile-1" class="rounded-circle" width="128">
+                                                    <img src="{% static 'img/Quick Icon.svg' %}" alt="team-profile-1"
+                                                        class="rounded-circle" width="128">
                                                 </div>
                                                 <div class="profile align-self-center">
                                                     <div class="name">QUICK</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-md-6 col-md-3 mb-5 animated" >
+                                        <div class="col-sm-12 col-md-6 col-md-3 mb-5 animated">
                                             <div class="d-flex team-member">
-                                                <div class="team-img float-left mr-3" >
-                                                    <img src="{% static 'img/Easy Icon.svg' %}"
-                                                        alt="team-profile-1" class="rounded-circle" width="128">
+                                                <div class="team-img float-left mr-3">
+                                                    <img src="{% static 'img/Easy Icon.svg' %}" alt="team-profile-1"
+                                                        class="rounded-circle" width="128">
                                                 </div>
                                                 <div class="profile align-self-center">
                                                     <div class="name">EASY</div>
-                                                  
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6 col-md-3 mb-5 animated">
                                             <div class="d-flex team-member">
                                                 <div class="team-img float-left mr-3">
-                                                    <img src="{% static 'img/Secure Icon.svg' %}"
-                                                        alt="team-profile-1" class="rounded-circle" width="128">
+                                                    <img src="{% static 'img/Secure Icon.svg' %}" alt="team-profile-1"
+                                                        class="rounded-circle" width="128">
                                                 </div>
                                                 <div class="profile align-self-center">
                                                     <div class="name">SECURE</div>
-                                                 
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6 col-md-3 mb-5 animated">
                                             <div class="d-flex team-member">
-                                                <div class="team-img float-left mr-3" >
-                                                    <img src="{% static 'img/Reliable Icon.svg' %}"
-                                                        alt="team-profile-1" class="rounded-circle" height="128" width="128">
+                                                <div class="team-img float-left mr-3">
+                                                    <img src="{% static 'img/Reliable Icon.svg' %}" alt="team-profile-1"
+                                                        class="rounded-circle" height="128" width="128">
                                                 </div>
                                                 <div class="profile align-self-center">
                                                     <div class="name">RELIABLE</div>
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -687,46 +698,55 @@
                 </section>
                 <!--/ About -->
                 <!-- Problems & Solutions -->
-                <section id="problem-solution" class="problem-solution section-pro section-padding " style="background: white;">
+                <section id="problem-solution" class="problem-solution section-pro section-padding "
+                    style="background: white;">
                     <div class="container">
                         <div class="heading text-center">
                             <div class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
                                 <h6 class="sub-title" style="color: gray;">MARKET</h6>
-                                <h2 class="title" style="color: black;">A <strong>Trusted Partner</strong> in the Global Financial Market</h2>
+                                <h2 class="title" style="color: black;">A <strong>Trusted Partner</strong> in the Global
+                                    Financial Market</h2>
                             </div>
                             <p class="content-desc animated" data-animation="fadeInUpShorter"
-                                data-animation-delay="0.4s" style="color: gray;">For everyone everywhere around the globe</p>
+                                data-animation-delay="0.4s" style="color: gray;">For everyone everywhere around the
+                                globe</p>
                         </div>
                         <div class="problems">
-                            <div class="row" >
-                                <div class="col-md-12 col-lg-6 floating" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6 floating"
+                                    style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
-                                            data-animation-delay="0.2s"style="color: black;">Years of Refining</h4>
+                                            data-animation-delay="0.2s" style="color: black;">Years of Refining</h4>
                                     </div>
-                                    <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s" style="color: gray;">
-                                        Paramount Global Ltd. is a script generated from the years of experience and commitment to deliver unmatched services.</p>
+                                    <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s"
+                                        style="color: gray;">
+                                        Paramount Global Ltd. is a script generated from the years of experience and
+                                        commitment to deliver unmatched services.</p>
                                 </div>
                                 <div class="col-md-12 col-lg-6 text-center floating">
-                                    <img src="{% static 'img/Refining.svg' %}"
-                                        class="problems-img animated" data-animation="fadeInUpShorter"
-                                        data-animation-delay="0.5s" alt="problems-graphic">
+                                    <img src="{% static 'img/Refining.svg' %}" class="problems-img animated"
+                                        data-animation="fadeInUpShorter" data-animation-delay="0.5s"
+                                        alt="problems-graphic">
                                 </div>
                             </div>
                         </div>
                         <div class="solutions mt-5">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6 text-center floating">
-                                    <img src="{% static 'img/Bulls Eye.svg' %}"
-                                        class="problems-img animated" data-animation="fadeInUpShorter"
-                                        data-animation-delay="0.5s" alt="problems-graphic">
+                                    <img src="{% static 'img/Bulls Eye.svg' %}" class="problems-img animated"
+                                        data-animation="fadeInUpShorter" data-animation-delay="0.5s"
+                                        alt="problems-graphic">
                                 </div>
-                                <div class="col-md-12 col-lg-6 move-first floating"style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                                <div class="col-md-12 col-lg-6 move-first floating"
+                                    style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
-                                            data-animation-delay="0.2s"style="color: black;">Hitting the Bull's Eye</h4>
+                                            data-animation-delay="0.2s" style="color: black;">Hitting the Bull's Eye
+                                        </h4>
                                     </div>
-                                    <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s" style="color: gray;">Our
+                                    <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s"
+                                        style="color: gray;">Our
                                         clients are in the market to create wealth, not to ramble. And we are serious
                                         about their growth and financial stability</p>
                                 </div>
@@ -734,19 +754,22 @@
                         </div>
                         <div class="problems">
                             <div class="row">
-                                <div class="col-md-12 col-lg-6 floating"style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                                <div class="col-md-12 col-lg-6 floating"
+                                    style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                                     <div class="heading mb-4">
                                         <h4 class="title animated" data-animation="fadeInUpShorter"
-                                            data-animation-delay="0.2s"style="color: black;">Valuing Professionalism</h4>
+                                            data-animation-delay="0.2s" style="color: black;">Valuing Professionalism
+                                        </h4>
                                     </div>
-                                    <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s" style="color: gray;">At
+                                    <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s"
+                                        style="color: gray;">At
                                         Global Paramount, we believe in delivering only the best. be it our support
                                         &amp; services, expertise, or opportunities. Truly professional.</p>
                                 </div>
                                 <div class="col-md-12 col-lg-6 text-center floating">
-                                    <img src="{% static 'img/Professionalism.svg' %}"
-                                        class="problems-img animated" data-animation="fadeInUpShorter"
-                                        data-animation-delay="0.5s" alt="problems-graphic">
+                                    <img src="{% static 'img/Professionalism.svg' %}" class="problems-img animated"
+                                        data-animation="fadeInUpShorter" data-animation-delay="0.5s"
+                                        alt="problems-graphic">
                                 </div>
                             </div>
                         </div>
@@ -836,7 +859,7 @@
                                 <div class="col-md-12 col-lg-6 col-xs-10 text-center">
                                     <img src="{% static 'img/Making_it_free_for_you.png' %}"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
-                                        data-animation-delay="0.5s" alt="problems-graphic"  width="250px" height-"250px">
+                                        data-animation-delay="0.5s" alt="problems-graphic" width="250px" height-"250px">
                                 </div>
                                 <div class="col-md-12 col-lg-6 col-xs-10 move-first">
                                     <div class="heading mb-4">
@@ -851,7 +874,7 @@
                         </div>
                     </section>
                     <br>
-                    <section class="first-step" >
+                    <section class="first-step">
                         <div class="solutions mt-5 w-56 m-auto">
                             <div class="row" style="justify-content: space-between;">
                                 <div class="col-md-12 col-lg-6 text-center">
@@ -873,8 +896,7 @@
                         <div class="solutions mt-5 w-56 m-auto">
                             <div class="row" style="justify-content: space-between;">
                                 <div class="col-md-12 col-lg-6 text-center">
-                                    <img src="{% static 'img/Unquie_Trading.png' %}"
-                                    style="margin-right: 20px;"
+                                    <img src="{% static 'img/Unquie_Trading.png' %}" style="margin-right: 20px;"
                                         class="solutions-img animated" data-animation="fadeInUpShorter"
                                         data-animation-delay="0.5s" alt="problems-graphic" height="300px" width="300px">
                                 </div>
@@ -975,11 +997,11 @@
                         </div>
                         <div class="team-profile mt-5">
                             <div class="row mb-5">
-                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" >
+                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated">
                                     <div class="d-flex team-member">
-                                        <div class="team-img float-left mr-3">
-                                            <img src="{% static 'img/Register.svg' %}"
-                                                alt="team-profile-1" class="rounded-circle" width="128">
+                                        <div class="team-img float-left mr-3" >
+                                            <img src="{% static 'img/Register.svg' %}" alt="team-profile-1"
+                                                class="rounded-circle" width="128">
                                         </div>
                                         <div class="profile align-self-center">
                                             <div class="name">Register</div>
@@ -987,11 +1009,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" >
+                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated">
                                     <div class="d-flex team-member">
                                         <div class="team-img float-left mr-3">
-                                            <img src="{% static 'img/Deposit.svg' %}"
-                                                alt="team-profile-1" class="rounded-circle" width="128">
+                                            <img src="{% static 'img/Deposit.svg' %}" alt="team-profile-1"
+                                                class="rounded-circle" width="128">
                                         </div>
                                         <div class="profile align-self-center">
                                             <div class="name">Deposit</div>
@@ -999,11 +1021,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated" >
+                                <div class="col-sm-12 col-md-6 col-lg-4 mb-5 animated">
                                     <div class="d-flex team-member">
                                         <div class="team-img float-left mr-3">
-                                            <img src="{% static 'img/Start Make Money.svg' %}"
-                                                alt="team-profile-1" class="rounded-circle" width="128">
+                                            <img src="{% static 'img/Start Make Money.svg' %}" alt="team-profile-1"
+                                                class="rounded-circle" width="128">
                                         </div>
                                         <div class="profile align-self-center">
                                             <div class="name">Start</div>
@@ -1017,8 +1039,8 @@
                 </section>
 
 
-              
-               
+
+
                 <!-- Advisors -->
                 <section id="advisor" class="advisor team section-padding">
                     <div class="container">
@@ -1085,14 +1107,14 @@
                                             <div class="thumb"
                                                 style="padding:15px; background-color:#2191FE; border-radius: 20px 20px 0px 0px">
                                                 <p style="color:white">
-                                                    I was a bit worried while entering the
-                                                    financial market, but it vanished with
-                                                    Paramount Global.
-                                                    The entire team of Paramount
-                                                    Global helped me and enabled me to
-                                                    establish myself as a profit making
-                                                    trader in the global financial market.
-                                                    A big thanks to you guys!</p>
+                                                    My eight years with Paramount
+                                                    Global have been incredible. And it's
+                                                    not only because of its professional
+                                                    services or expertise but there was
+                                                    something more.<br>
+                                                    Its support and commitment to
+                                                    making you a profitable trader was
+                                                    something that mesmerized me.</p>
                                             </div>
                                             <div class="down-content">
                                                 <h4>Morgan Jordan</h4>
@@ -1177,712 +1199,755 @@
                         </div>
                     </div>
                 </section>
-    <!--/ Advisors -->
-    
-   
-    <!-- ICO Video Modal -->
-    <div class="modal ico-modal fade" id="ico-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body p-0">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" id="video"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Dev Team Modal Pop-ups -->
-    <!-- Team user popup - teamUser9 -->
-    <div class="modal team-modal fade" id="teamUser9" tabindex="-1" role="dialog" aria-labelledby="teamUser9Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-9-lg.jpg' %}"
-                                alt="Logan S. Perez">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser9Title">Logan S. Perez</h5>
-                            <small class="text-muted mb-0 ">CEO & CFO</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!--/ Advisors -->
+
+
+                <!-- ICO Video Modal -->
+                <div class="modal ico-modal fade" id="ico-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body p-0">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" id="video"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser6 -->
-    <div class="modal team-modal fade" id="teamUser6" tabindex="-1" role="dialog" aria-labelledby="teamUser6Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-6-lg.jpg' %}"
-                                alt="Susan J. Newsom">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser6Title">Susan J. Newsom</h5>
-                            <small class="text-muted mb-0 ">Graphic Designer</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser2 -->
-    <div class="modal team-modal fade" id="teamUser2" tabindex="-1" role="dialog" aria-labelledby="teamUser2Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-2-lg.jpg' %}"
-                                alt="Mary J. Wardle">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser2Title">Mary J. Wardle</h5>
-                            <small class="text-muted mb-0 ">CPO</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- Dev Team Modal Pop-ups -->
+                <!-- Team user popup - teamUser9 -->
+                <div class="modal team-modal fade" id="teamUser9" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser9Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-9-lg.jpg' %}" alt="Logan S. Perez">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser9Title">Logan S. Perez</h5>
+                                        <small class="text-muted mb-0 ">CEO & CFO</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser10 -->
-    <div class="modal team-modal fade" id="teamUser10" tabindex="-1" role="dialog" aria-labelledby="teamUser10Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-10-lg.jpg' %}"
-                                alt="Nicholas M. Sharpe">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser10Title">Nicholas M. Sharpe</h5>
-                            <small class="text-muted mb-0 ">UI / UX Designer</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser4 -->
-    <div class="modal team-modal fade" id="teamUser4" tabindex="-1" role="dialog" aria-labelledby="teamUser4Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-4-lg.jpg' %}"
-                                alt="Cecelia T. Carter">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser4Title">Cecelia T. Carter</h5>
-                            <small class="text-muted mb-0 ">CTO</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- Team user popup - teamUser6 -->
+                <div class="modal team-modal fade" id="teamUser6" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser6Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-6-lg.jpg' %}"
+                                            alt="Susan J. Newsom">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser6Title">Susan J. Newsom</h5>
+                                        <small class="text-muted mb-0 ">Graphic Designer</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser13 -->
-    <div class="modal team-modal fade" id="teamUser13" tabindex="-1" role="dialog" aria-labelledby="teamUser13Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-13-lg.jpg' %}"
-                                alt="Terry T. Robinette">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser13Title">Terry T. Robinette</h5>
-                            <small class="text-muted mb-0 ">Developer</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Advisors Team Modal Pop-ups -->
-    <!-- Team user popup - teamUser1 -->
-    <div class="modal team-modal fade" id="teamUser1" tabindex="-1" role="dialog" aria-labelledby="teamUser1Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-1-lg.jpg' %}"
-                                alt="Nadia Sidko">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser1Title">Nadia Sidko</h5>
-                            <small class="text-muted mb-0 ">Blockchain Entrepreneur</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- Team user popup - teamUser2 -->
+                <div class="modal team-modal fade" id="teamUser2" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser2Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-2-lg.jpg' %}" alt="Mary J. Wardle">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser2Title">Mary J. Wardle</h5>
+                                        <small class="text-muted mb-0 ">CPO</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser8 -->
-    <div class="modal team-modal fade" id="teamUser8" tabindex="-1" role="dialog" aria-labelledby="teamUser8Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-8-lg.jpg' %}"
-                                alt="Pavel Volek">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser8Title">Pavel Volek</h5>
-                            <small class="text-muted mb-0 ">Entrepreneur and Investor</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser3 -->
-    <div class="modal team-modal fade" id="teamUser3" tabindex="-1" role="dialog" aria-labelledby="teamUser3Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-3-lg.jpg' %}"
-                                alt="Alyona Blakytna">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser3Title">Alyona Blakytna</h5>
-                            <small class="text-muted mb-0 ">Fin-Tech Entrepreneur</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- Team user popup - teamUser10 -->
+                <div class="modal team-modal fade" id="teamUser10" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser10Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-10-lg.jpg' %}"
+                                            alt="Nicholas M. Sharpe">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser10Title">Nicholas M. Sharpe</h5>
+                                        <small class="text-muted mb-0 ">UI / UX Designer</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser11 -->
-    <div class="modal team-modal fade" id="teamUser11" tabindex="-1" role="dialog" aria-labelledby="teamUser11Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-11-lg.jpg' %}"
-                                alt="Martin Solarik">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser11Title">Martin Solarik</h5>
-                            <small class="text-muted mb-0 ">Fin-Tech Investor</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser7 -->
-    <div class="modal team-modal fade" id="teamUser7" tabindex="-1" role="dialog" aria-labelledby="teamUser7Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-7-lg.jpg' %}"
-                                alt="Kate Fisenko">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser7Title">Kate Fisenko</h5>
-                            <small class="text-muted mb-0 ">Fin-Tech Investor</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- Team user popup - teamUser4 -->
+                <div class="modal team-modal fade" id="teamUser4" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser4Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-4-lg.jpg' %}"
+                                            alt="Cecelia T. Carter">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser4Title">Cecelia T. Carter</h5>
+                                        <small class="text-muted mb-0 ">CTO</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team user popup - teamUser12 -->
-    <div class="modal team-modal fade" id="teamUser12" tabindex="-1" role="dialog" aria-labelledby="teamUser12Title"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="row p-4">
-                        <div class="col-12 col-md-5">
-                            <img class="img-fluid rounded" src="{% static 'theme-assets/images/user-12-lg.jpg' %}"
-                                alt="Michal Krajnansky">
-                        </div>
-                        <div class="col-12 col-md-7 mt-sm-3">
-                            <h5 id="teamUser12Title">Michal Krajnansky</h5>
-                            <small class="text-muted mb-0 ">Blockchain Entrepreneur</small>
-                            <div class="social-profile">
-                                <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-linkedin"></i></a>
-                                <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
-                                        class="ti-twitter-alt"></i></a>
-                                <a href="#" title="Github" class="font-medium grey-accent2"><i
-                                        class="ti-github"></i></a>
-                            </div>
-                            <div class="my-4">
-                                <p>Experienced algorithmic crypto trader and a machine learning evangelist.
-                                </p>
-                                <p>I’m focusing on the logic behind the combination of analysis tools,
-                                    neural networks and genetic algorithms for optimization. Always wanted
-                                    to have a trading bot with more features but never had the time to build
-                                    a solution beyond basic python technical analysis tracker.</p>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
-                                    class="float-right">85%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 85%;"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
-                                    class="float-right">90%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
-                                    class="float-right">75%</small></h6>
-                            <div class="progress box-shadow-1 mb-4">
-                                <div class="progress-bar progress-orange" role="progressbar" style="width: 75%;"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- Team user popup - teamUser13 -->
+                <div class="modal team-modal fade" id="teamUser13" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser13Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-13-lg.jpg' %}"
+                                            alt="Terry T. Robinette">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser13Title">Terry T. Robinette</h5>
+                                        <small class="text-muted mb-0 ">Developer</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Advisors Team Modal Pop-ups -->
+                <!-- Team user popup - teamUser1 -->
+                <div class="modal team-modal fade" id="teamUser1" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser1Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-1-lg.jpg' %}" alt="Nadia Sidko">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser1Title">Nadia Sidko</h5>
+                                        <small class="text-muted mb-0 ">Blockchain Entrepreneur</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team user popup - teamUser8 -->
+                <div class="modal team-modal fade" id="teamUser8" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser8Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-8-lg.jpg' %}" alt="Pavel Volek">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser8Title">Pavel Volek</h5>
+                                        <small class="text-muted mb-0 ">Entrepreneur and Investor</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team user popup - teamUser3 -->
+                <div class="modal team-modal fade" id="teamUser3" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser3Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-3-lg.jpg' %}"
+                                            alt="Alyona Blakytna">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser3Title">Alyona Blakytna</h5>
+                                        <small class="text-muted mb-0 ">Fin-Tech Entrepreneur</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team user popup - teamUser11 -->
+                <div class="modal team-modal fade" id="teamUser11" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser11Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-11-lg.jpg' %}"
+                                            alt="Martin Solarik">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser11Title">Martin Solarik</h5>
+                                        <small class="text-muted mb-0 ">Fin-Tech Investor</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team user popup - teamUser7 -->
+                <div class="modal team-modal fade" id="teamUser7" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser7Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-7-lg.jpg' %}" alt="Kate Fisenko">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser7Title">Kate Fisenko</h5>
+                                        <small class="text-muted mb-0 ">Fin-Tech Investor</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team user popup - teamUser12 -->
+                <div class="modal team-modal fade" id="teamUser12" tabindex="-1" role="dialog"
+                    aria-labelledby="teamUser12Title" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+                                <div class="row p-4">
+                                    <div class="col-12 col-md-5">
+                                        <img class="img-fluid rounded"
+                                            src="{% static 'theme-assets/images/user-12-lg.jpg' %}"
+                                            alt="Michal Krajnansky">
+                                    </div>
+                                    <div class="col-12 col-md-7 mt-sm-3">
+                                        <h5 id="teamUser12Title">Michal Krajnansky</h5>
+                                        <small class="text-muted mb-0 ">Blockchain Entrepreneur</small>
+                                        <div class="social-profile">
+                                            <a href="#" title="Linkedin" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-linkedin"></i></a>
+                                            <a href="#" title="Twitter" class="font-medium grey-accent2 mr-2"><i
+                                                    class="ti-twitter-alt"></i></a>
+                                            <a href="#" title="Github" class="font-medium grey-accent2"><i
+                                                    class="ti-github"></i></a>
+                                        </div>
+                                        <div class="my-4">
+                                            <p>Experienced algorithmic crypto trader and a machine learning evangelist.
+                                            </p>
+                                            <p>I’m focusing on the logic behind the combination of analysis tools,
+                                                neural networks and genetic algorithms for optimization. Always wanted
+                                                to have a trading bot with more features but never had the time to build
+                                                a solution beyond basic python technical analysis tracker.</p>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Blockchain</small> <small
+                                                class="float-right">85%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">Python</small> <small
+                                                class="float-right">90%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <h6 class="mb-0"><small class="text-uppercase">C++</small> <small
+                                                class="float-right">75%</small></h6>
+                                        <div class="progress box-shadow-1 mb-4">
+                                            <div class="progress-bar progress-orange" role="progressbar"
+                                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-    </div>
-    </main>
-    </div>
     </div>
     <!-- //////////////////////////////////// FOOTER ////////////////////////////////////-->
 
