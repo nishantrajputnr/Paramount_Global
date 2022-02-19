@@ -9,8 +9,12 @@ urlpatterns = [
     path('education/',views.education,name="education"),
     path('trading/',views.trading,name="trading"),
     path('terminal/',views.terminal,name="terminal"),
-    path('referal/',views.referal,name="referal"),
+
+   
     path('account/',views.account,name="account"),
+
+
+    path('referral/',views.referral,name="referral"),
 
 ]
 
