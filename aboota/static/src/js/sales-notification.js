@@ -8,7 +8,7 @@
  *   Author URL: http://www.themeforest.net/user/pixinvent
  **/
 
-
+/** Notifications Not required**/
 $(window).on('load', function() {
     // Notification 1
     setTimeout(function() {
