@@ -1,8 +1,26 @@
 
+@media (max-width:1024px){
+	.trade{
+		display: flex;
+		flex-direction: column;
+		align-items: center !important;
+	}
+	.pricing-wrapper{
+		padding: 0;
+	}
+}
 
 @media (max-width:650px){
 	.first-step{
 		flex-direction:column ;
+	}
+	.trade{
+		display: flex;
+		flex-direction: column;
+		align-items: center !important;
+	}
+	.pricing-wrapper{
+		padding: 0;
 	}
 	.acc-head{
 		flex-direction: column;

@@ -108,7 +108,10 @@
                                 <a class="nav-link" href={% url 'education' %}>Education</a>
                             </li>
                             <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
-                                <a class="nav-link" href={% url 'referral' %}>Referral </a>
+                                <a class="nav-link" href={% url 'referral' %}>Referral</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'account' %}>Account</a>
                             </li>
                             {% comment %} <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
                                 <a class="nav-link" href={% url 'contact' %}>Contact</a>
@@ -232,10 +235,9 @@
                             </div>
                             <div class="pricing-container">
                       
-                                <ul class="pricing-list bounce-invert d-flex">
+                                <ul class="pricing-list bounce-invert d-flex trade">
                                   <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                    <ul >
-                                      <!-- Buy Pricing Table #1 Starts -->
+                                    <ul class="pricing-wrapper">
                                       <li  style="border-radius:35px;" >
                                         <header style="height: 200px;">
                                           <div >
@@ -283,7 +285,7 @@
                                   </li>
                                   <!-- 3 -->
                                   <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                    <ul >
+                                    <ul class="pricing-wrapper" >
                                       <!-- Buy Pricing Table #1 Starts -->
                                       <li style="border-radius:35px;" >
                                         <header  style="height: 200px;">
@@ -310,7 +312,7 @@
                     
                                   <!-- 4 -->
                                   <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                    <ul >
+                                    <ul class="pricing-wrapper">
                                       <!-- Buy Pricing Table #1 Starts -->
                                       <li  style="border-radius:35px;" >
                                         <header  style="height: 200px;">
