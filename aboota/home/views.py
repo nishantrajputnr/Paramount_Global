@@ -13,7 +13,7 @@ def trading(request):
     return render(request,"trading.html")     
 def terminal(request):
     return render(request,"terminal.html")     
-def referal(request):
-    return render(request,"referal.html")     
+def referral(request):
+    return render(request,"referral.html")     
 def contact(request):
     return render(request,"contact.html")     
