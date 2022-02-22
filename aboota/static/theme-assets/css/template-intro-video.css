@@ -16,7 +16,9 @@ body {
 p {
   font-size : 0.938rem;
 }
-
+.clr-black{
+  color: black;
+}
 a:hover {
   text-decoration : none;
 }
